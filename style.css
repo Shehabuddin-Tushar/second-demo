@@ -446,6 +446,7 @@ hr{
     .section-title{
 
        margin-left: 0px;
+       color:red;
     }
     .players{
       grid-template-columns: repeat(2,1fr);
