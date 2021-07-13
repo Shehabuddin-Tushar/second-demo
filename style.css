@@ -456,6 +456,14 @@ hr{
   
         flex-direction: column;
      }
+
+     .player h3{
+        margin-left: 1px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 27px;
+    }
    /*top players end*/
 
    /*top blog start*/
