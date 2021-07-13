@@ -39,10 +39,6 @@ body{
    
 }
 
-.top-header .nav{
-
-}
-
 .top-header .nav ul{
 
  list-style: none;
@@ -227,6 +223,7 @@ hr{
     display:grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 17px;
+    margin-bottom: 30px;
 }
 
 .course .course-details .author{
@@ -275,6 +272,73 @@ hr{
     
 }
 
+/*gellary part start*/
+
+.gellary{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+.photo{
+    position: relative;
+    width: 278px;
+    box-shadow: 3px 3px 5px lightblue;
+    border-radius: 10px;
+}
+
+.gellary-thumbnail{
+    overflow: hidden; 
+    
+}
+.photo:hover .gellary-thumbnail img{
+    transform: scale(1.5);
+    
+}
+.photo:hover .gellary-info{
+    background-color: red;
+    border-radius: 0px 0px 5px 5px;
+    opacity: 0.8;
+}
+.gellary-info{
+    position: absolute;
+    bottom:0;
+    padding: 20px 30px;
+    color:greenyellow;
+    width: 79%;
+    height: 30%;
+    transition: 1s;
+    border-radius: 0px 0px 5px 5px;
+
+   
+   
+}
+
+.gellary-thumbnail img{
+    transition: 1s;
+}
+
+.gellary .photo .gellary-thumbnail{
+
+    height: 180px;
+    width: 278px;
+    border-radius: 10px;
+
+}
+
+
+
+.gellary .photo .gellary-thumbnail img{
+
+    width:100%;
+    height: 100%;
+}
+
+
+
+
+/*gellary part end*/
+
 
 
 /*media query start*/
@@ -282,6 +346,14 @@ hr{
    main{
         
         top: 30px;
+    }
+
+    .section-title{
+
+        text-align: center;
+        background-color: lightgray;
+        padding: 10px;
+        
     }
     .menubar{
 
@@ -438,9 +510,65 @@ hr{
 
 /*latest blog end*/
 
+/*gellary start*/
+
+.gellary{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.photo{
+  
+    width: 328px;
+    
+}
+
+.gellary .photo .gellary-thumbnail{
+
+    height: 200px;
+    width: 328px;
+    border-radius: 10px;
+
+}
+
+
+
+.gellary .photo .gellary-thumbnail img{
+
+    width:100%;
+    height: 100%;
+}
+
+
+.gellary-info{
+    position: absolute;
+    bottom:0;
+    padding: 20px 30px;
+    color:greenyellow;
+    width: 81.5%;
+    height: 30%;
+    transition: 1s;
+    border-radius: 0px 0px 5px 5px;
+
+   
+   
+}
+
+
+
+
+
+
+
+
+/*gellary end*/
+
   }
 
-  @media (min-width: 688px) and (max-width: 992px) {
+  @media (min-width: 689px) and (max-width: 992px) {
 
     .top-header .nav ul li{
 
@@ -465,6 +593,8 @@ hr{
         padding: 0px 40px;
        
     }
+
+    
 
     .container{
         
@@ -530,5 +660,64 @@ hr{
     grid-column-gap: 17px;
     grid-row-gap: 10px;
 }
+
+
+
+/*gellery start*/
+
+.gellary{
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    margin-left: -20px; */
+
+    display: flex;
+    flex-wrap: wrap;
+    
+    align-items: center;
+
+}
+
+
+.gellary .photo .gellary-thumbnail{
+
+    height: 180px;
+    width: 290px;
+    border-radius: 10px;
+
+}
+
+
+
+.gellary .photo .gellary-thumbnail img{
+
+    width:100%;
+    height: 100%;
+}
+
+.gellary-info{
+    position: absolute;
+    bottom:0;
+    padding: 20px 30px;
+    color:greenyellow;
+    width: 82.8%;
+    height: 30%;
+    transition: 1s;
+    border-radius: 0px 0px 5px 5px;
+
+   
+   
+}
+
+.section-title{
+
+    
+    margin-left: -1px;
+    
+    
+}
+
+
 /*media query end*/
 
