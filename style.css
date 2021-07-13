@@ -445,7 +445,7 @@ hr{
   /*top players start*/
     .section-title{
 
-       margin-left: 30px;
+       margin-left: 0px;
     }
     .players{
       grid-template-columns: repeat(2,1fr);
@@ -479,7 +479,7 @@ hr{
 .blog .thumbnail img{
 
     height:200px;
-    width: 300px;
+    width: 285px;
     margin-right: 16px;
     margin-bottom: 20px;
     margin-top: 10px;
@@ -503,7 +503,7 @@ hr{
 }
 
 .courses .course .course-banner img{
-    width: 303px;
+    width: 290px;
    height: 154px;
 }
 
